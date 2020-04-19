@@ -24,6 +24,9 @@ function generatePassword() {
     } else if (length > 128) {
         alert("Please select a shorter password")
 
+    } else if (isNaN(length)) {
+        alert("please type in number using the number pad");
+
     } else {
         console.log(length)
         var alphabet = confirm("Would you like a letters in your password? ")
